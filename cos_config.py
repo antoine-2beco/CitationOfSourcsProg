@@ -13,13 +13,13 @@ citation_config = {
             "obligatory": True,
             "uppercase": False,
             "lowercase": False,
-            "surrounded": ('«', '»'),
+            "surrounded": ('« ', ' »'),
         },
         "Name of the site": {
             "obligatory": True,
             "uppercase": False,
             "lowercase": False,
-            "surrounded": ('', '[en ligne]'),
+            "surrounded": ('', ' [en ligne]'),
         },
         "Publication date": {
             "obligatory": False,
@@ -31,7 +31,7 @@ citation_config = {
             "obligatory": True,
             "uppercase": False,
             "lowercase": True,
-            "surrounded": ('sur', ''),
+            "surrounded": ('sur ', ''),
         },
         "Date of the viewed": {
             "obligatory": True,

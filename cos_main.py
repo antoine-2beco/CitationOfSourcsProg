@@ -35,11 +35,15 @@ def get_elements(choice):
         if cos_config.citation_config[choice][element]['surrounded']:
             input_element = cos_config.citation_config[choice][element]['surrounded'][0] + input_element + cos_config.citation_config[choice][element]['surrounded'][1]
 
-
-        elements.append(input_element)
+        if input_element != "":
+            elements.append(input_element)
 
     print(', '.join(elements) + '.')
-
+    print("--")
+    if input("Is there another source to generate ?") in ["yes", "y"]:
+        get_elements(main_menu())
+    else:
+        return
 
 
 get_elements(main_menu())
